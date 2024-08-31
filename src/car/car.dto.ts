@@ -8,7 +8,6 @@ export class CreateCarDto {
   model: string;
 
   @IsInt()
-  @Min(1886) // Cars were invented around 1886
   @Max(new Date().getFullYear())
   year: number;
 }
